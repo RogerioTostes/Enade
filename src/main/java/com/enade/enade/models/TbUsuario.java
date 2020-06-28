@@ -114,17 +114,17 @@ public class TbUsuario implements Serializable {
         this.tbResultadoList = tbResultadoList;
     }
 
+//    @Override
+//    public int hashCode() {
+//        int hash = 0;
+//        hash += (idUsuario != null ? idUsuario.hashCode() : 0);
+//        return hash;
+//    }
+//
     @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (idUsuario != null ? idUsuario.hashCode() : 0);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof TbUsuario)) {
+  public boolean equals(Object object) {
+       // TODO: Warning - this method won't work in the case the id fields are not set
+       if (!(object instanceof TbUsuario)) {
             return false;
         }
         TbUsuario other = (TbUsuario) object;
@@ -133,10 +133,10 @@ public class TbUsuario implements Serializable {
         }
         return true;
     }
-
-    @Override
-    public String toString() {
-        return "br.edu.uniacademia.enade.model.TbUsuario[ idUsuario=" + idUsuario + " ]";
-    }
+//
+//    @Override
+//    public String toString() {
+//        return "br.edu.uniacademia.enade.model.TbUsuario[ idUsuario=" + idUsuario + " ]";
+//    }
     
 }

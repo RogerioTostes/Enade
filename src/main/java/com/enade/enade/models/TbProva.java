@@ -22,10 +22,6 @@ import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
-/**
- *
- * @author tassi
- */
 @Entity
 @Table(name = "tbProva")
 @XmlRootElement

@@ -15,10 +15,6 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
-/**
- *
- * @author tassi
- */
 @Entity
 @Table(name = "tbQuestao")
 @XmlRootElement
