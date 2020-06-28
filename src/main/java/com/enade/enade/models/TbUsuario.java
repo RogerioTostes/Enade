@@ -18,10 +18,6 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
-/**
- *
- * @author tassi
- */
 @Entity
 @Table(name = "tbUsuario")
 @XmlRootElement
@@ -47,13 +43,14 @@ public class TbUsuario implements Serializable {
     @Column(name = "emailUsuario")
     private String emailUsuario;
     @Basic(optional = false)
-   
-    @Column(name = "senhaUsuario")
+     @Column(name = "senhaUsuario")
     private String senhaUsuario;
     @JoinColumn(name = "tbTipoUsuario_idTipoUsuario", referencedColumnName = "idTipoUsuario")
     @ManyToOne(optional = false)
     private TbTipoUsuario tbTipoUsuarioidTipoUsuario;
-   
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "tbUsuarioidUsuario")
+    private List<TbResultado> tbResultadoList;
+
     public TbUsuario() {
     }
 
@@ -108,7 +105,14 @@ public class TbUsuario implements Serializable {
         this.tbTipoUsuarioidTipoUsuario = tbTipoUsuarioidTipoUsuario;
     }
 
-  
+    @XmlTransient
+    public List<TbResultado> getTbResultadoList() {
+        return tbResultadoList;
+    }
+
+    public void setTbResultadoList(List<TbResultado> tbResultadoList) {
+        this.tbResultadoList = tbResultadoList;
+    }
 
     @Override
     public int hashCode() {
