@@ -7,14 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.enade.enade.models.Evento;
 import com.enade.enade.models.TbTipoUsuario;
 import com.enade.enade.models.TbUsuario;
 import com.enade.enade.repository.TbTipoUsuarioRepository;
 import com.enade.enade.repository.TbUsuarioRepository;
 
 @Controller
-public class UsuarioController {
+public class TbUsuarioController {
 
 	@Autowired
 	private TbUsuarioRepository user;
@@ -42,6 +41,8 @@ public class UsuarioController {
 		attributes.addFlashAttribute("mensagem", "Evento cadastrado com sucesso!");
 		return "redirect:/cadastrarUsuario";
 	}
+	
+
 	
 }	
 

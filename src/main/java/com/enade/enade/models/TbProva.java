@@ -95,12 +95,12 @@ public class TbProva implements Serializable {
         this.tbResultadoList = tbResultadoList;
     }
 
-    @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (idProva != null ? idProva.hashCode() : 0);
-        return hash;
-    }
+//    @Override
+//    public int hashCode() {
+//        int hash = 0;
+//        hash += (idProva != null ? idProva.hashCode() : 0);
+//        return hash;
+//    }
 
     @Override
     public boolean equals(Object object) {
@@ -115,9 +115,9 @@ public class TbProva implements Serializable {
         return true;
     }
 
-    @Override
-    public String toString() {
-        return "br.edu.uniacademia.enade.model.TbProva[ idProva=" + idProva + " ]";
-    }
+//    @Override
+//    public String toString() {
+//        return "br.edu.uniacademia.enade.model.TbProva[ idProva=" + idProva + " ]";
+//    }
     
 }
