@@ -54,6 +54,29 @@
                     });
                               
                     </script>
+                    <canvas id="bar-chart" width="800" height="450"></canvas>
+                     <script>
+                    new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["Aluno 1", "Aluno 2", "Aluno 3", "Aluno 4", "Aluno 5","Aluno 6","Aluno 7","Aluno 8","Aluno 9","Aluno 10"],
+      datasets: [
+        {
+          label: "Numero",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#fa1616","#12cad6","#092532","#fa7d09","#2f2519"],
+          data: [50,60,70,40,20,80,68,87,36,58]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Nota dos Top 10 ultimos alunos'
+      }
+    }
+});
+ </script>
                 </div>
 	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

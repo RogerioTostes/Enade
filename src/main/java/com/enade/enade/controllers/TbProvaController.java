@@ -45,8 +45,18 @@ public class TbProvaController {
 	}
 	
 	@RequestMapping("/graficos")
-	public ModelAndView listaEventos(){
+	public ModelAndView graficos(){
 		ModelAndView mv = new ModelAndView("view/graficos");
+		int myNum1 = 40;
+		int myNum2 = 60;
+		mv.addObject("eventos1", myNum1);
+		mv.addObject("eventos2", myNum2);
+
+		return mv;
+	}
+	@RequestMapping("/tabelas")
+	public ModelAndView tabelas(){
+		ModelAndView mv = new ModelAndView("view/tabelas");
 		int myNum1 = 40;
 		int myNum2 = 60;
 		mv.addObject("eventos1", myNum1);
