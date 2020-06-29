@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<htmlxmlns:th="http://thymeleaf.org"
+<html xmlns:th="http://thymeleaf.org"
 	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
     <head>
-        <title>Start Page</title>
+        <title>Cadastro de Questoes</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
         <style>
         	/*
 To change this license header, choose License Headers in Project Properties.
@@ -11,8 +14,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 20 de jun de 2020, 23:19:26
-    Author     : C.Tiago
+   
 */
 
 * {box-sizing: border-box}
@@ -46,7 +48,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 .dropdown select {
       background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-select.gif) no-repeat #f1f1f1;  /* Imagem de fundo (Seta) */
-      background-position: 205px center;  /*Posição da imagem do background*/
+      background-position: 205px center;  /Posição da imagem do background/
       width: 270px; /* Tamanho do select, maior que o tamanho da div "div-select" */
       height:48px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
       font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */
@@ -55,7 +57,7 @@ input[type=text]:focus, input[type=password]:focus {
       color:black; /* Cor da Fonte */
       text-indent: 0.01px; /* Remove seta padrão do FireFox */
       text-overflow: "";  /* Remove seta padrão do FireFox */     
-      select::-ms-expand {display: none;} /* Remove seta padrão do IE*/
+      
   
 }
 
@@ -92,12 +94,21 @@ a {
   text-align: center;
 }
         </style>
+         <link rel="stylesheet" href="style/styleCss.css"/>
+        <nav class="menu">
+		    <div class="nav-wrapper">
+		      <a href="#" class="brand-logo">Cadastro de Questao:</a>
+<!-- 		      <ul id="nav-mobile" class="right hide-on-med-and-down"> -->
+<!-- 		        <li><a href="/eventos" class="waves-effect waves-light btn"><i class="material-icons left">format_list_bulleted</i>Lista de Eventos</a></li> -->
+<!-- 		      </ul> -->
+		    </div>
+		</nav>
     </head>
     <body>
 
+
         <form method="post">
             <div class="container">
-                <h1>Cadastro de Questão</h1>
                 <hr>
 
                 
