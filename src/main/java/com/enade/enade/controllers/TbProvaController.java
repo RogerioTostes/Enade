@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.enade.enade.models.Evento;
+
 import com.enade.enade.models.TbProva;
 import com.enade.enade.models.TbTipoUsuario;
 import com.enade.enade.models.TbUsuario;
